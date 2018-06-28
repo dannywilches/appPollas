@@ -1,0 +1,41 @@
+<div class="container p-3"> 
+  <div class="card col-md-12">
+    <div class="card-header">
+      <div class="card_tittle">
+      	<div class='row'>
+  	    	<div class="col-md-12 text-center"><h6 class="title_match"></h6></div>
+      	</div>
+      </div>
+    </div>
+    <div class="card-body">
+      <div class="bodyCard">
+        <div class="row text-center">
+          <div class="col-md-4 text_value p-4"></div>
+          <div class="col-md-4 values p-4"></div>
+          <div class="col-md-4 p-4"></div>
+        </div>
+        <div class="row"> 
+            <div class="col-md-4 text-center local"></div>
+            <div class="col-md-4" id="score">
+              <form>
+                <div class="input-group">
+                  <span class="input-group-addon"><i class="fa fa-caret-left"></i></span>
+                  <input type="text" class="form-control col-xs-2 team-local" name="team-local" placeholder="0">
+                  <input type="text" class="form-control col-xs-2 team-visit" name="team-visit" placeholder="0">
+                  <span class="input-group-addon"><i class="fa fa-caret-right"></i></span>
+                </div>
+              </form>
+            </div>
+            <div class="col-md-4 text-center visit"></div>
+        </div>
+        <div class="row"><span id="error" class="animated infinite flash errorSpan"></span></div>    
+      </div>
+    </div>
+    <div class="card-footer text-muted text-center">
+      <div id="buttons_action">
+        <button type="submit" class="btn btn-outline-success btn-sm btnBet" disabled="disabled">Apuesta <i class="fa fa-money" aria-hidden="true"></i></button>
+        <button type="button" class="btn btn-info btn-sm btnModal" data-dismiss="modal">Consultar <i class="fa fa-clipboard" aria-hidden="true"></i></button>
+      </div>
+    </div>
+  </div>
+</div>

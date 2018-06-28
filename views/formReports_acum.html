@@ -1,0 +1,57 @@
+<div class="container animated zoomIn">
+	<div class="card text-center mx-auto mt-3">
+		<div class="card-header" >
+			<div class="row">
+				<div class="col-md-2">
+					<i class="fa fa-clipboard fa-lg" aria-hidden="true"></i>
+				</div>
+				<div class="col-md-8">
+					<label class="h6">Reporte de asistencia al Economato. </label>
+				</div>
+				<div class="col-md-2">
+					<i class="fa fa-clipboard fa-lg" aria-hidden="true"></i>
+				</div>
+			</div>
+		</div>
+		<form id="formReports_acum" autocomplete="off">
+			<div class="form-group">
+				<div class="card-block">
+					<div class="row"></div>
+					<div class="row p-3 divReport_acum">
+						<div class="col-md-2">
+							<span class="h6">Fecha Inicio</span>
+						</div>
+						<div class="col-md-4"  id="date_one">    
+							<input class="form-control form-control-sm w-50" type="date" id="dateStart">
+						</div>
+						<div class="col-md-2">
+							<span class="h6">Fecha Final</span>
+						</div>
+						<div class="col-md-4"  id="date_two">    
+							<input class="form-control form-control-sm w-50" type="date" id="dateEnd">
+						</div>
+					</div>
+					<div class="row animated pulse infinite align-items-center justify-content-center" id="contentError">
+						<span id="errorForm"></span>
+					</div>
+				</div>
+			</div>
+			<div class="card-footer text-muted">
+				<div class="row">
+					<div class="col-md-12">
+						<button type="submit" class="btn btn-info btn-sm" id="btnGenerate" disabled="disabled">Generar</button>
+					</div>	
+				</div>
+			</div>
+		</form>
+	</div>
+	<div class="row">
+		<div class="col-md-12">
+			<div  id ="contentReport_acum" style="padding-top: 5%;">		
+				<div class="row">
+					<div class="col-md-12" id="tableContent_"></div>					
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
